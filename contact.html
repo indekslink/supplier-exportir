@@ -69,7 +69,7 @@
         font-size: calc(3vw + 16px);
       }
       #slider .text h2.subtitle {
-        font-size: calc(2vw + 2px);
+        font-size: calc(2vw + 10px);
         font-weight: normal;
         color: whitesmoke;
       }
@@ -80,6 +80,16 @@
         text-transform: uppercase;
         font-weight: 600;
         border: none;
+      }
+      @media (max-width: 768px) {
+        #slider .text {
+          padding: 3rem;
+        }
+      }
+      @media (max-width: 569px) {
+        #slider .text {
+          padding: 2rem;
+        }
       }
     </style>
   </head>
@@ -164,11 +174,11 @@
     <div id="wrapper" style="margin-top: 5%">
       <div id="konten" style="width: 70%">
         <h1>Contact Information</h1>
-        <img
+        <!-- <img
           src="https://hpf.co.id/img/blog/contact-us.jpg"
           alt="Gallery Item 6"
           width="100%"
-        />
+        /> -->
         <div class="row">
           <div
             class="column"
@@ -240,16 +250,20 @@
             <div class="clear"></div>
             <h4>Office</h4>
             <span
-              >Jl. Taman Perkantoran II Kav. 23 Graha Family, Surabaya 60226
-              INDONESIA</span
+              >Jln, Dr Sutomo No.40 Sungai Bangkong Pontianak Selatan Kota
+              Pontianak Kalimantan Barat 78116 Indonesia</span
             >
             <br />
             <br />
-            <span>Tel: +6231-738-9977</span>
+            <h4>Tel</h4>
+            <div>0821-5251-9079</div>
+            <div>(0561) 8178586</div>
+            <div>0822-5591-7879</div>
+
             <br />
-            <span>Fax: +6231-738-9889</span>
+            <!-- <span>Fax: +6231-738-9889</span>
             <br />
-            <span><strong>Email:</strong> charlesp1001@gmail.com</span>
+            <span><strong>Email:</strong> charlesp1001@gmail.com</span> -->
             <br />
             <div class="cleaner h40"></div>
             <div class="img_frame img_frame_13 img_nom">
@@ -298,25 +312,42 @@
           </div>
           <div class="colfooter2">
             <h3>Contact Us</h3>
-            <p>Address : Taman Perkantoran II Kav. 23</p>
+            <div class="footer-address">
+              <div class="bold">Address</div>
+              <span>:</span>
+              <div>
+                Jln, Dr Sutomo No.40 Sungai Bangkong Pontianak Selatan Kota
+                Pontianak Kalimantan Barat 78116 Indonesia
+              </div>
+            </div>
+            <!-- <p>Address : Taman Perkantoran II Kav. 23</p>
             <p><hidden>Address : </hidden>Graha Family, Surabaya - 60226</p>
-            <p><hidden>Address : </hidden>INDONESIA</p>
+            <p><hidden>Address : </hidden>INDONESIA</p> -->
           </div>
           <div class="colfooter2">
             <hidden><h3>Contact Us</h3></hidden>
-            <p><b>Telp :</b> +62.31 738 9977</p>
-            <p><b>Fax :</b> +62.31 738 9889</p>
-            <p>E-mail : charlesp1001@gmail.com</p>
+            <div class="footer-address">
+              <div class="bold">Tel</div>
+              <span>:</span>
+              <div>
+                <div>0821-5251-9079</div>
+                <div>(0561) 8178586</div>
+                <div>0822-5591-7879</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="konten-footer2" style="margin: 0 auto; padding: 0 0 20px 0">
           <p style="text-align: right">
-            © 2019,HPF Display. All rights reserved.
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            ,HPF Display. All rights reserved.
           </p>
         </div>
       </div>
     </div>
-
-    <script></script>
+    <script src="./js/myscript.js"></script>
   </body>
 </html>
