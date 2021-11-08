@@ -18,6 +18,7 @@ button.whatsapp {
   background-color: #61ce70;
   color: white;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 li.bghover ul {
   display: flex;
@@ -101,7 +102,7 @@ header:hover {
 }
 */
 #headcell {
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   vertical-align: middle;
   margin: 0;
@@ -109,7 +110,7 @@ header:hover {
   display: table-cell;
 }
 #headcell2 {
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   vertical-align: middle;
   margin: 0;
@@ -117,7 +118,7 @@ header:hover {
   display: table-cell;
 }
 #headcell3 {
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   vertical-align: middle;
   margin: 0;
@@ -125,7 +126,7 @@ header:hover {
   display: table-cell;
 }
 #headcell4 {
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   vertical-align: middle;
   margin: 0;
@@ -206,7 +207,7 @@ header2 ul li {
   margin: 0;
   padding: 0;
   position: relative;
-  min-width: 25%;
+  margin: 0 calc(2vw + 2px);
 }
 header3 ul li {
   /* float: left; */
@@ -215,7 +216,7 @@ header3 ul li {
   margin: 0;
   padding: 0;
   position: relative;
-  min-width: 25%;
+  margin: 0 calc(0.5vw - 2px);
 }
 header4 ul li {
   /* float: left; */
@@ -223,7 +224,7 @@ header4 ul li {
   margin: 0;
   padding: 0;
   position: relative;
-  min-width: 25%;
+  margin: 0 calc(0.5vw - 1px);
 }
 .active {
   border-bottom: #f93 solid 3px;

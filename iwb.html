@@ -30,41 +30,78 @@
           return false;
         });
       }); //]]>
+      window.onscroll = function () {
+        header();
+      };
+
+      function header() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          document.getElementById("header").className = "visible";
+        } else {
+          document.getElementById("header").className = "hidden";
+        }
+      }
     </script>
   </head>
   <body style="min-width: 884px">
-    <header2 style="position: sticky">
-      <div id="headcell2">
-        <div style="opacity: 1" class="logo">
+    <header4 id="header" class="hidden">
+      <div id="headcell4">
+        <div class="logo">
+          <!-- <img src="img/logo/logo.png" /> -->
           <button class="whatsapp">Whatsapp US</button>
         </div>
       </div>
-      <div id="headcell2" class="cf">
+      <div id="headcell4" class="cf">
         <ul style="clear: both">
-          <hidden
-            ><li class="dropdown"><a href="#">Applications</a></li></hidden
-          >
-          <li class="dropdown"><a href="/">Home</a></li>
-          <li class="dropdown bghover active">
-            <a href="#">Product</a>
+          <li class="dropdown active"><a href="/">Home</a></li>
+          <li class="dropdown bghover">
+            <a href="#">Supplier and Exportir</a>
             <ul class="active">
-              <li><a href="iwb">Interactive Whiteboard</a></li>
-              <li><a href="videowall">LCD Video Wall</a></li>
-              <li><a href="poster">Poster Signage</a></li>
-              <li><a href="kiosk">Multimedia Kiosk</a></li>
-              <li><a href="wallmount">LCD Wallmount</a></li>
-              <li><a href="videotron-in">Indoor LED Display</a></li>
-              <li><a href="videotron-out">Outdoor LED Display</a></li>
-              <!--<li><a href="doccamera">Document Camera</a></li>-->
-              <li><a href="sl-cv200">Web Camera</a></li>
-              <li><a href="sl-cv400">Meeting Camera</a></li>
-              <li><a href="sl-cv610">Conference Camera</a></li>
+              <li><a href="coconut">Coconut</a></li>
+              <li><a href="dessicated-coconut">Dessicated Coconut</a></li>
+              <li><a href="coconut-palm-sugar">Coconut Palm Sugar</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="contact">Contact Us</a></li>
+          <li class="dropdown"><a href="dragon-fruit">Dragon Fruit</a></li>
+          <li class="dropdown"><a href="forwarder">Forwarder</a></li>
+          <li class="dropdown"><a href="trucking">Trucking</a></li>
+          <li class="dropdown">
+            <a href="trucking">Export and Import Clearance</a>
+          </li>
         </ul>
       </div>
-    </header2>
+    </header4>
+
+    <header3 style="z-index: 5">
+      <div id="headcell3" style="padding-top: 2%">
+        <div class="logo">
+          <!-- <img src="img/logo/logo.png" /> -->
+          <button class="whatsapp">Whatsapp US</button>
+        </div>
+      </div>
+      <div id="headcell3" class="cf" style="padding: 2% 1% 0 0">
+        <ul style="clear: both">
+          <li class="dropdown active"><a href="/">Home</a></li>
+          <li class="dropdown bghover">
+            <a href="#">Supplier and Exportir</a>
+            <ul class="active">
+              <li><a href="coconut">Coconut</a></li>
+              <li><a href="dessicated-coconut">Dessicated Coconut</a></li>
+              <li><a href="coconut-palm-sugar">Coconut Palm Sugar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="dragon-fruit">Dragon Fruit</a></li>
+          <li class="dropdown"><a href="forwarder">Forwarder</a></li>
+          <li class="dropdown"><a href="trucking">Trucking</a></li>
+          <li class="dropdown">
+            <a href="trucking">Export and Import Clearance</a>
+          </li>
+        </ul>
+      </div>
+    </header3>
 
     <div id="slider">
       <img
@@ -623,7 +660,7 @@
             <h3>Contact Us</h3>
             <div class="footer-address">
               <div class="bold">Address</div>
-              <span>:</span>
+              <span></span>
               <div>
                 Jln, Dr Sutomo No.40 Sungai Bangkong Pontianak Selatan Kota
                 Pontianak Kalimantan Barat 78116 Indonesia
@@ -634,11 +671,11 @@
             <hidden><h3>Contact Us</h3></hidden>
             <div class="footer-address">
               <div class="bold">Tel</div>
-              <span>:</span>
+              <span></span>
               <div>
                 <div>0821-5251-9079</div>
                 <div>(0561) 8178586</div>
-                <div>0822-5591-7879</div>
+                <div>0813-5266-9961</div>
               </div>
             </div>
           </div>

@@ -27,9 +27,12 @@
     <link rel="shortcut icon" href="img/logo/logo1.png" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/submain.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="js/ScrollTriggerAnim.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function () {
@@ -55,6 +58,13 @@
     </script>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .target-menu {
+        scroll-margin-top: 3rem;
+      }
+
       #slider {
         max-height: 100vh;
       }
@@ -97,10 +107,15 @@
       }
       .grid a {
         display: inline-block;
+        width: 100%;
         margin-bottom: 1rem;
       }
       .grid img {
         width: 100%;
+        object-fit: cover;
+      }
+      #konten .target-menu {
+        margin: 3rem 0;
       }
       @media (max-width: 768px) {
         .grid {
@@ -134,7 +149,7 @@
     </style>
   </head>
   <body>
-    <header4 id="header" class="hidden">
+    <header4 id="header" class="hidden target-menu">
       <div id="headcell4">
         <div class="logo">
           <!-- <img src="img/logo/logo.png" /> -->
@@ -143,24 +158,21 @@
       </div>
       <div id="headcell4" class="cf">
         <ul style="clear: both">
-          <li class="dropdown active"><a href="/">Home</a></li>
+          <li class="dropdown"><a href="#">Home</a></li>
           <li class="dropdown bghover">
-            <a href="#">Product</a>
+            <a href="#">Supplier and Exportir</a>
             <ul class="active">
-              <li><a href="iwb">Interactive Whiteboard</a></li>
-              <li><a href="videowall">LCD Video Wall</a></li>
-              <li><a href="poster">Poster Signage</a></li>
-              <li><a href="kiosk">Multimedia Kiosk</a></li>
-              <li><a href="wallmount">LCD Wallmount</a></li>
-              <li><a href="videotron-in">Indoor LED Display</a></li>
-              <li><a href="videotron-out">Outdoor LED Display</a></li>
-              <!--<li><a href="doccamera">Document Camera</a></li>-->
-              <li><a href="sl-cv200">Web Camera</a></li>
-              <li><a href="sl-cv400">Meeting Camera</a></li>
-              <li><a href="sl-cv610">Conference Camera</a></li>
+              <li><a href="#coconut">Coconut</a></li>
+              <li><a href="#dessicated-coconut">Dessicated Coconut</a></li>
+              <li><a href="#coconut-palm-sugar">Coconut Palm Sugar</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="contact">Contact Us</a></li>
+          <li class="dropdown"><a href="#dragon-fruit">Dragon Fruit</a></li>
+          <li class="dropdown"><a href="#forwarder">Forwarder</a></li>
+          <li class="dropdown"><a href="#trucking">Trucking</a></li>
+          <li class="dropdown">
+            <a href="#export-import">Export and Import Clearance</a>
+          </li>
         </ul>
       </div>
     </header4>
@@ -174,24 +186,21 @@
       </div>
       <div id="headcell3" class="cf" style="padding: 2% 1% 0 0">
         <ul style="clear: both">
-          <li class="dropdown active"><a href="/">Home</a></li>
+          <li class="dropdown"><a href="#">Home</a></li>
           <li class="dropdown bghover">
-            <a href="#">Product</a>
+            <a href="#">Supplier and Exportir</a>
             <ul class="active">
-              <li><a href="iwb">Interactive Whiteboard</a></li>
-              <li><a href="videowall">LCD Video Wall</a></li>
-              <li><a href="poster">Poster Signage</a></li>
-              <li><a href="kiosk">Multimedia Kiosk</a></li>
-              <li><a href="wallmount">LCD Wallmount</a></li>
-              <li><a href="videotron-in">Indoor LED Display</a></li>
-              <li><a href="videotron-out">Outdoor LED Display</a></li>
-              <!--<li><a href="doccamera">Document Camera</a></li>-->
-              <li><a href="sl-cv200">Web Camera</a></li>
-              <li><a href="sl-cv400">Meeting Camera</a></li>
-              <li><a href="sl-cv610">Conference Camera</a></li>
+              <li><a href="#coconut">Coconut</a></li>
+              <li><a href="#dessicated-coconut">Dessicated Coconut</a></li>
+              <li><a href="#coconut-palm-sugar">Coconut Palm Sugar</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="contact">Contact Us</a></li>
+          <li class="dropdown"><a href="#dragon-fruit">Dragon Fruit</a></li>
+          <li class="dropdown"><a href="#forwarder">Forwarder</a></li>
+          <li class="dropdown"><a href="#trucking">Trucking</a></li>
+          <li class="dropdown">
+            <a href="#export-import">Export and Import Clearance</a>
+          </li>
         </ul>
       </div>
     </header3>
@@ -217,33 +226,212 @@
 
     <div id="wrapper" style="margin-top: 5%">
       <div id="konten">
-        <h1 style="text-indent: 5%">Latest Trends</h1>
+        <h1>Latest Trends</h1>
         <div class="grid">
-          <a href="./img/kelapa/1.jpeg" class="progressive replace"
+          <a
+            href="./img/kelapa/1.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/1.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/2.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/2.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/2.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/3.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/3.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/3.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/4.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/4.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/4.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/5.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/5.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/5.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/6.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/6.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/6.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/7.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/7.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/7.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/8.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/8.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/8.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/9.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/9.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/9.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/10.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/10.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/10.jpeg" alt="image" class="preview" /></a
-          ><a href="./img/kelapa/11.jpeg" class="progressive replace"
+          ><a
+            href="./img/kelapa/11.jpeg"
+            class="progressive replace anim"
+            data-animation="fadeInUp"
             ><img src="./img/kelapa/11.jpeg" alt="image" class="preview"
           /></a>
         </div>
-
+        <div class="target-menu" id="coconut">
+          <div class="container">
+            <h1 style="color: brown">Coconut</h1>
+            <div class="grid">
+              <a
+                href="./img/kelapa/1.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/1.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/2.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/2.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/3.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/3.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/4.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/4.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/coco-1.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img
+                  src="./img/kelapa/coco-1.jpeg"
+                  alt="image"
+                  class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/coco-2.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img
+                  src="./img/kelapa/coco-2.jpeg"
+                  alt="image"
+                  class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/coco-3.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img
+                  src="./img/kelapa/coco-3.jpeg"
+                  alt="image"
+                  class="preview"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="target-menu" id="dragon-fruit">
+          <div class="container">
+            <h1 style="color: red">Dragon Fruit</h1>
+            <div class="grid">
+              <a
+                href="./img/kelapa/6.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/6.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/10.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/10.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/dragon-fruit-1.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img
+                  src="./img/kelapa/dragon-fruit-1.jpeg"
+                  alt="image"
+                  class="preview"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="target-menu" id="export-import">
+          <div class="container">
+            <h1>Export and Import Clearance</h1>
+            <div class="grid">
+              <a
+                href="./img/kelapa/7.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/7.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/11.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/11.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/9.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/9.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-1.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-1.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-2.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-2.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-3.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-3.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-4.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-4.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-5.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-5.jpeg" alt="image" class="preview"
+              /></a>
+              <a
+                href="./img/kelapa/ei-6.jpeg"
+                class="progressive replace anim"
+                data-animation="fadeInUp"
+                ><img src="./img/kelapa/ei-6.jpeg" alt="image" class="preview"
+              /></a>
+            </div>
+          </div>
+        </div>
         <div class="clear"></div>
       </div>
 
@@ -252,24 +440,22 @@
           <div class="colfooter2">
             <h3>Product</h3>
             <ul class="nodec">
-              <li><a href="iwb">Interactive Whiteboard</a></li>
-              <li><a href="videowall">LCD Video Wall</a></li>
+              <li><a href="iwb">Coconut</a></li>
+              <li><a href="videowall">Dessicated Coconut</a></li>
               <li><a href="poster"> Digital Poster Signage</a></li>
-              <li><a href="kiosk">Multimedia Kiosk</a></li>
-              <li><a href="wallmount">LCD Wallmount</a></li>
-              <li><a href="videotron-in">Indoor LED Display Screen</a></li>
-              <li><a href="videotron-out">Outdoor LED Display Screen</a></li>
-              <!--<li><a href="doccamera">Document Camera</a></li>-->
-              <li><a href="sl-cv200">Web Camera</a></li>
-              <li><a href="sl-cv400">Meeting Camera</a></li>
-              <li><a href="sl-cv610">Conference Camera</a></li>
+              <li><a href="kiosk">Coconut Palm Sugar</a></li>
+              <li><a href="wallmount">Dragon Fruit</a></li>
+              <li><a href="videotron-in">Forwarder</a></li>
+              <li><a href="videotron-out">Trucking</a></li>
+
+              <li><a href="sl-cv200">Export and Import Clearance</a></li>
             </ul>
           </div>
           <div class="colfooter2">
             <h3>Contact Us</h3>
             <div class="footer-address">
               <div class="bold">Address</div>
-              <span>:</span>
+              <span></span>
               <div>
                 Jln, Dr Sutomo No.40 Sungai Bangkong Pontianak Selatan Kota
                 Pontianak Kalimantan Barat 78116 Indonesia
@@ -280,11 +466,11 @@
             <hidden><h3>Contact Us</h3></hidden>
             <div class="footer-address">
               <div class="bold">Tel</div>
-              <span>:</span>
+              <span></span>
               <div>
                 <div>0821-5251-9079</div>
                 <div>(0561) 8178586</div>
-                <div>0822-5591-7879</div>
+                <div>0813-5266-9961</div>
               </div>
             </div>
           </div>
@@ -295,12 +481,19 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            ,HPF Display. All rights reserved.
+            Display. All rights reserved.
           </p>
         </div>
       </div>
     </div>
 
     <script src="./js/myscript.js"></script>
+    <script>
+      const timeout = [200, 400, 600, 800, 1000];
+      document.querySelectorAll(".anim").forEach((anim) => {
+        anim.dataset.timeout =
+          timeout[Math.floor(Math.random() * timeout.length)];
+      });
+    </script>
   </body>
 </html>
