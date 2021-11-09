@@ -149,6 +149,10 @@ header2 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
 }
 header3 ul {
@@ -203,11 +207,11 @@ header ul li {
   min-width: 25%;
 }
 header2 ul li {
-  float: left;
+  /* float: left; */
   margin: 0;
   padding: 0;
   position: relative;
-  margin: 0 calc(2vw + 2px);
+  margin: 0 calc(0.5vw - 2px);
 }
 header3 ul li {
   /* float: left; */
@@ -225,6 +229,30 @@ header4 ul li {
   padding: 0;
   position: relative;
   margin: 0 calc(0.5vw - 1px);
+}
+img.slide::before {
+  content: "";
+  inset: 0;
+}
+.flex-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.flex-gallery a {
+  display: block;
+  width: 30%;
+  margin: 0.5rem;
+}
+.flex-gallery a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#konten .target-menu,
+.margin-y {
+  margin: 3rem 0;
 }
 .active {
   border-bottom: #f93 solid 3px;
