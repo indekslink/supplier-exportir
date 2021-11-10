@@ -5,3 +5,18 @@ whatsApp.forEach((e) => {
     window.open(`https://api.whatsapp.com/send?phone=${number}`, "_blank");
   });
 });
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+});
