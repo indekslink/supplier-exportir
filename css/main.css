@@ -244,11 +244,12 @@ img.slide::before {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .flex-gallery a {
   display: block;
   width: 30%;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
 }
 
 .flex-gallery a img {
@@ -1448,11 +1449,13 @@ p.camera {
     width: 50px;
   }
   #headcell a {
-    font: bold 14px/40px sans-serif;
+    /* font: bold 14px/40px sans-serif; */
+    font: bold 6px/25px sans-serif;
     padding: 0 5px;
   }
   #headcell2 a {
-    font: bold 14px/40px sans-serif;
+    /* font: bold 14px/40px sans-serif; */
+    font: bold 6px/25px sans-serif;
     padding: 0 5px;
   }
   #headcell3 a {
@@ -1553,6 +1556,22 @@ p.camera {
 		opacity:1;
 		animation-name:none;
 	}*/
+  button.whatsapp {
+    padding: 0.5rem 1rem;
+  }
+  #slider.hero-konten img.img {
+    min-height: 40vh !important;
+    width: 100%;
+  }
+  #slider.hero-konten .slide1 {
+    top: 10% !important;
+  }
+  #slider.hero-konten .slide2 {
+    top: 22% !important;
+  }
+  #slider.hero-konten img.slide {
+    top: 20% !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   text3 {
@@ -1577,11 +1596,11 @@ p.camera {
     width: 30px;
   }
   #headcell a {
-    font: bold 14px/40px sans-serif;
+    font: bold 5px/10px sans-serif;
     padding: 0 5px;
   }
   #headcell2 a {
-    font: bold 14px/40px sans-serif;
+    font: bold 5px/10px sans-serif;
     padding: 0 5px;
   }
   #headcell3 a {
