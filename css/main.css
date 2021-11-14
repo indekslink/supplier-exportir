@@ -341,22 +341,22 @@ img.slide::before {
 #headcell4 li ul li a {
   font: bold 16px/60px sans-serif;
 }
-#headcell li:hover a {
+#headcell li:is(:hover, .is-active) a {
   /*	background:#fff;
 */
   color: #f63;
 }
-#headcell2 li:hover a {
+#headcell2 li:is(:hover, .is-active) a {
   /*	background:#fff;
 */
   color: #f63;
 }
-#headcell3 li:hover a {
+#headcell3 li:is(:hover, .is-active) a {
   /*	background:#fff;
 */
   color: #f63;
 }
-#headcell4 li:hover a {
+#headcell4 li:is(:hover, .is-active) a {
   /*	background:#fff;
 */
   color: #f63;
@@ -472,19 +472,19 @@ img.slide::before {
   top: 60px;
   visibility: visible;
 }
-#headcell li ul li a:hover {
+#headcell li ul li a:is(:hover, .is-active) {
   background: #ccc;
   color: #f63;
 }
-#headcell2 li ul li a:hover {
+#headcell2 li ul li a:is(:hover, .is-active) {
   background: #ccc;
   color: #f63;
 }
-#headcell3 li ul li a:hover {
+#headcell3 li ul li a:is(:hover, .is-active) {
   background: #ccc;
   color: #f63;
 }
-#headcell4 li ul li a:hover {
+#headcell4 li ul li a:is(:hover, .is-active) {
   background: #ccc;
   color: #f63;
 }
@@ -1699,4 +1699,11 @@ p.camera {
   span {
     font-size: 10px;
   }
+}
+#documentation .card {
+  display: inline-block;
+  float: none;
+}
+#documentation .card.hide {
+  display: none !important;
 }
