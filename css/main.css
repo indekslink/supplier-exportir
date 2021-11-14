@@ -9,6 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   /* height: 2000px; */
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 button.whatsapp {
@@ -1469,10 +1470,10 @@ p.camera {
   #headcell li ul li a {
     font: bold 9px/30px sans-serif;
   }
-  #headcell2 li ul li a {
+  /* #headcell2 li ul li a {
     font: bold 9px/30px sans-serif;
-  }
-  #headcell3 li ul li a {
+  } */
+  :is(#headcell3, #headcell2) li ul li a {
     font: bold 5px/25px sans-serif;
   }
   #headcell4 li ul li a {
@@ -1481,10 +1482,10 @@ p.camera {
   #headcell li ul {
     top: 20px;
   }
-  #headcell2 li ul {
+  /* #headcell2 li ul {
     top: 20px;
-  }
-  #headcell3 li ul {
+  } */
+  :is(#headcell3, #headcell2) li ul {
     top: 7px;
   }
   #headcell4 li ul {
@@ -1493,10 +1494,10 @@ p.camera {
   #headcell li:hover ul {
     top: 40px;
   }
-  #headcell2 li:hover ul {
+  /* #headcell2 li:hover ul {
     top: 40px;
-  }
-  #headcell3 li:hover ul {
+  } */
+  :is(#headcell3, #headcell2) li:hover ul {
     top: 15px;
   }
   #headcell4 li:hover ul {
@@ -1614,10 +1615,10 @@ p.camera {
   #headcell li ul li a {
     font: bold 10px/40px sans-serif;
   }
-  #headcell2 li ul li a {
+  /* #headcell2 li ul li a {
     font: bold 10px/40px sans-serif;
-  }
-  #headcell3 li ul li a {
+  } */
+  :is(#headcell3, #headcell2) li ul li a {
     font: bold 4px/10px sans-serif;
   }
   #headcell4 li ul li a {
@@ -1626,10 +1627,10 @@ p.camera {
   #headcell li ul {
     top: 20px;
   }
-  #headcell2 li ul {
+  /* #headcell2 li ul {
     top: 20px;
-  }
-  #headcell3 li ul {
+  } */
+  :is(#headcell3, #headcell2) li ul {
     top: 7px;
   }
   #headcell4 li ul {
@@ -1638,10 +1639,10 @@ p.camera {
   #headcell li:hover ul {
     top: 40px;
   }
-  #headcell2 li:hover ul {
+  /* #headcell2 li:hover ul {
     top: 40px;
-  }
-  #headcell3 li:hover ul {
+  } */
+  :is(#headcell3, #headcell2) li:hover ul {
     top: 10px;
   }
   #headcell4 li:hover ul {
