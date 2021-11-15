@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="./assets/owl-carousel/dist/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="./assets/owl-carousel/dist/assets/owl.theme.default.css" />
 
+  <link rel="stylesheet" href="./assets/lightbox/lightbox.css">
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -215,28 +217,44 @@
         Latest Uploads
       </h1>
       <div class="grid">
-        <a href="./img/kelapa/1.jpeg" class="progressive replace anim" data-animation="fadeInUp">
+        <a href="./img/kelapa/1.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
           <img src="./img/kelapa/1.jpeg" alt="image" class="preview" />
         </a>
-        <a href="./img/kelapa/coco-2.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/coco-2.jpeg" alt="image" class="preview" />
-        </a><a href="./img/kelapa/coco-3.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/coco-3.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/5.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/5.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/6.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/6.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/port(1).jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/port(1).jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/8.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/8.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/9.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/9.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/10.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/10.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/port(2).jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/port(2).jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/11.jpeg" class="progressive replace anim" data-animation="fadeInUp"><img src="./img/kelapa/11.jpeg" alt="image" class="preview" /></a>
+        <a href="./img/kelapa/coco-2.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/coco-2.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/coco-3.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/coco-3.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/5.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/5.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/6.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/6.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/port(1).jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/port(1).jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/8.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/8.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/9.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp"><img src="./img/kelapa/9.jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/10.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/10.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/port(2).jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp"><img src="./img/kelapa/port(2).jpeg" alt="image" class="preview" /></a><a href="./img/kelapa/11.jpeg" class="progressive replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/11.jpeg" alt="image" class="preview" />
+        </a>
       </div>
 
       <div class="clear"></div>
-      <h1 class="anim" data-animation="fadeInDown" data-timeout="400" style="text-align: center; color: red">
-        Documentation
-      </h1>
-      <div id="documentation" style="width: 90%; margin: 3% auto 1% auto; text-align: center">
-        <?php
-        $hideItem = 'all';
-        include './partials/documentation.php' ?>
-      </div>
+
     </div>
 
     <?php include './partials/footer.php' ?>
 
   </div>
   <script src="./assets/owl-carousel/dist/owl.carousel.min.js"></script>
+  <script src="./assets/lightbox/lightbox.js"></script>
   <script src="./js/myscript.js"></script>
   <script>
     const timeout = [200, 400, 600, 800, 1000];
@@ -256,6 +274,12 @@
           0: {
             items: 1,
           },
+        },
+      });
+      $(".progressive").magnificPopup({
+        type: "image",
+        gallery: {
+          enabled: true
         },
       });
     });
