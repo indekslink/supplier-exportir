@@ -22,6 +22,7 @@ $menus = [
             ['title' => 'Robusta Coffe', 'url' => '/robusta-green-been-coffe', 'name' => 'coffe'],
             ['title' => 'Chicken Egg', 'url' => '/chicken-egg', 'name' => 'egg'],
             ['title' => 'Betel Nut', 'url' => '/betel-nut', 'name' => 'nut'],
+            ['title' => 'Pinang', 'url' => '/pinang', 'name' => 'pinang'],
         ]
     ],
 ];

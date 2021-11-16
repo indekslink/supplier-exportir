@@ -217,8 +217,14 @@
         Latest Uploads
       </h1>
       <div class="grid">
+        <a href="./img/kelapa/betel-nut(2).jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/betel-nut(2).jpeg" alt="image" class="preview" />
+        </a>
         <a href="./img/kelapa/1.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
           <img src="./img/kelapa/1.jpeg" alt="image" class="preview" />
+        </a>
+        <a href="./img/kelapa/betel-nut(1).jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
+          <img src="./img/kelapa/betel-nut(1).jpeg" alt="image" class="preview" />
         </a>
         <a href="./img/kelapa/coco-2.jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
           <img src="./img/kelapa/coco-2.jpeg" alt="image" class="preview" />

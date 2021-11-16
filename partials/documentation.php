@@ -9,6 +9,7 @@ $data = [
     ['img' => './img/kelapa/8.jpeg', 'url' => '/dessicated-coconut', 'title' => 'Dessicated Coconut', 'slug' => 'dc'],
     ['img' => './img/kelapa/10.jpeg', 'url' => '/dragon-fruit', 'title' => 'Dragon Fruit', 'slug' => 'dragon'],
     ['img' => './img/kelapa/betel-nut(1).jpeg', 'url' => '/betel-nut', 'title' => 'Betel Nut', 'slug' => 'nut'],
+    ['img' => './img/kelapa/pinang-2.jpg', 'url' => '/pinang', 'title' => 'Pinang', 'slug' => 'pinang'],
 ];
 foreach ($data as $item) {
     if ($hideItem == 'all' || $hideItem != $item['slug']) {
