@@ -105,18 +105,28 @@
     }
 
     .grid {
-      columns: 4;
-      column-gap: 1rem;
+      /* columns: 4;
+      column-gap: 1rem; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .5rem;
     }
 
     .grid a {
       display: inline-block;
-      width: 100%;
-      margin-bottom: 1rem;
+      width: calc(10vw + 100px);
+      overflow: hidden;
+      border-radius: 5px;
+      height: calc(10vw + 100px);
+
+      /* width: 100%;
+      margin-bottom: 1rem; */
     }
 
     .grid img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 

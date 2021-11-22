@@ -242,14 +242,16 @@ img.slide::before {
 }
 .flex-gallery {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .flex-gallery a {
-  display: block;
-  width: 30%;
+  display: inline-block;
+  width: calc(10vw + 100px);
+  overflow: hidden;
+  border-radius: 5px;
+  height: calc(10vw + 100px);
   /* margin: 0.5rem; */
 }
 
