@@ -3,7 +3,7 @@
         <div class="colfooter2">
             <h3>All Documentation</h3>
             <ul class="nodec">
-                <li><a href="/coconut">Coconut</a></li>
+                <li><a href="/coconut">Semi Husked Coconut</a></li>
                 <li><a href="/dessicated-coconut">Dessicated Coconut</a></li>
                 <li><a href="/coconut-palm-sugar">Coconut Palm Sugar</a></li>
                 <li><a href="/dragon-fruit">Dragon Fruit</a></li>
@@ -19,9 +19,9 @@
                 <li>
                     <a href="/betel-nut">Betel Nut</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="/pinang">Pinang</a>
-                </li>
+                </li> -->
             </ul>
 
         </div>

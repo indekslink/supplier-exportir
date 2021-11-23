@@ -28,19 +28,22 @@
 </head>
 
 <body>
-  <header2 style="position: sticky">
-    <div id="headcell2">
-      <div style="opacity: 1" class="logo">
-        <button class="whatsapp">Whatsapp US</button>
+
+  <div class="my-nav  ">
+    <div class="container">
+      <button class="whatsapp">Whatsapp Us</button>
+
+      <div class="hamburger-menu">
+        <span></span><span></span><span></span>
       </div>
-    </div>
-    <div id="headcell2" class="cf">
-      <ul style="clear: both">
+      <ul class="my-menu">
         <?php $active = ['trucking'];
         include './partials/menu.php' ?>
       </ul>
     </div>
-  </header2>
+  </div>
+
+
 
   <div id="slider" class="hero-konten">
     <img class="img" src="https://hpf.co.id/img/blog/videotron-out/header.png" style="width: 100%; height: auto" />

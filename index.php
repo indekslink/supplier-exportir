@@ -36,20 +36,20 @@
       });
     }); //]]>
 
-    window.onscroll = function() {
-      header();
-    };
+    // window.onscroll = function() {
+    //   header();
+    // };
 
-    function header() {
-      if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-      ) {
-        document.getElementById("header").className = "visible";
-      } else {
-        document.getElementById("header").className = "hidden";
-      }
-    }
+    // function header() {
+    //   if (
+    //     document.body.scrollTop > 100 ||
+    //     document.documentElement.scrollTop > 100
+    //   ) {
+    //     document.getElementById("header").className = "visible";
+    //   } else {
+    //     document.getElementById("header").className = "hidden";
+    //   }
+    // }
   </script>
 
   <style>
@@ -166,34 +166,19 @@
 </head>
 
 <body>
-  <header4 id="header" class="hidden target-menu">
-    <div id="headcell4">
-      <div class="logo">
-        <!-- <img src="img/logo/logo.png" /> -->
-        <button class="whatsapp">Whatsapp US</button>
-      </div>
-    </div>
-    <div id="headcell4" class="cf">
-      <ul style="clear: both">
-        <?php $active = ['home'];
-        include './partials/menu.php'; ?>
-    </div>
-  </header4>
+  <div class="my-nav transparent ">
+    <div class="container">
+      <button class="whatsapp">Whatsapp Us</button>
 
-  <header3 style="z-index: 5">
-    <div id="headcell3" style="padding-top: 2%">
-      <div class="logo">
-        <!-- <img src="img/logo/logo.png" /> -->
-        <button class="whatsapp">Whatsapp US</button>
+      <div class="hamburger-menu">
+        <span></span><span></span><span></span>
       </div>
-    </div>
-    <div id="headcell3" class="cf" style="padding: 2% 1% 0 0">
-      <ul style="clear: both">
+      <ul class="my-menu">
         <?php $active = ['home'];
-        include './partials/menu.php'; ?>
+        include './partials/menu.php' ?>
       </ul>
     </div>
-  </header3>
+  </div>
 
   <div id="slider">
     <div class="text">
