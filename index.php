@@ -115,10 +115,10 @@
 
     .grid a {
       display: inline-block;
-      width: calc(10vw + 50px);
+      width: calc(10vw + 80px);
       overflow: hidden;
       border-radius: 5px;
-      height: calc(10vw + 50px);
+      height: calc(10vw + 80px);
 
       /* width: 100%;
       margin-bottom: 1rem; */

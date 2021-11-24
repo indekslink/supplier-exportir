@@ -89,6 +89,9 @@ html body .my-nav :is(.my-menu, .my-menu-dropdown) a:hover {
   pointer-events: visible;
   opacity: 1;
 }
+#feature h1 {
+  margin: 3rem 0;
+}
 .my-menu-dropdown {
   transition: 0.5s ease;
   flex-direction: column;
@@ -345,10 +348,10 @@ img.slide::before {
 }
 .flex-gallery a {
   display: inline-block;
-  width: calc(10vw + 100px);
+  width: calc(10vw + 80px);
   overflow: hidden;
   border-radius: 5px;
-  height: calc(10vw + 100px);
+  height: calc(10vw + 80px);
   /* margin: 0.5rem; */
 }
 

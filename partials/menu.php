@@ -13,6 +13,7 @@ $menus = [
     ],
     ['title' => 'Trucking', 'url' => '/trucking', 'name' => 'trucking',],
     ['title' => 'Export and Import Clearance', 'url' => '/export-import-clearance', 'name' => 'export',],
+
     [
         'title' => 'Other Product',
         'url' => '#',
@@ -25,6 +26,7 @@ $menus = [
             // ['title' => 'Pinang', 'url' => '/pinang', 'name' => 'pinang'],
         ]
     ],
+    ['title' => 'Video Gallery', 'url' => '/video-gallery', 'name' => 'video',],
 ];
 
 $item = '';

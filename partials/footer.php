@@ -19,6 +19,9 @@
                 <li>
                     <a href="/betel-nut">Betel Nut</a>
                 </li>
+                <li>
+                    <a href="/video-gallery">Video Gallery</a>
+                </li>
                 <!-- <li>
                     <a href="/pinang">Pinang</a>
                 </li> -->
