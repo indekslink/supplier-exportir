@@ -115,10 +115,10 @@
 
     .grid a {
       display: inline-block;
-      width: calc(10vw + 100px);
+      width: calc(10vw + 50px);
       overflow: hidden;
       border-radius: 5px;
-      height: calc(10vw + 100px);
+      height: calc(10vw + 50px);
 
       /* width: 100%;
       margin-bottom: 1rem; */
@@ -183,24 +183,24 @@
   <div id="slider">
     <div class="text">
       <h2 class="title">
-        The Leading Supplier <br />
-        Of Coconut Product
+        The Leading Supplier and Exporter <br />
+        Of Indonesian Agriculture Commodities
       </h2>
       <h2 class="subtitle">Supplying across the global</h2>
       <button>Learn More</button>
     </div>
     <div class="owl-carousel">
       <figure>
-        <img src="./img/kelapa/logo-hero.jpg" class="preview" style="width: 100%; height: auto" />
+        <img src="./img/kelapa/logo-hero.jpg" class="preview" style="width: 100%; min-height: 60vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-1.jpg" class="preview" style="width: 100%; height: auto" />
+        <img src="./img/kelapa/carousel-1.jpg" class="preview" style="width: 100%; min-height: 60vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-2.jpg" class="preview" style="width: 100%; height: auto" />
+        <img src="./img/kelapa/carousel-2.jpg" class="preview" style="width: 100%; min-height: 60vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-3.jpg" class="preview" style="width: 100%; height: auto" />
+        <img src="./img/kelapa/carousel-3.jpg" class="preview" style="width: 100%; min-height: 60vh" />
       </figure>
     </div>
   </div>
@@ -208,7 +208,7 @@
 
   <div id="wrapper" style="margin-top: 5%">
     <div id="konten">
-      <h1 class="anim" data-animation="fadeInDown" data-timeout="400" style="text-align: center">
+      <h1 class="anim" data-animation="fadeInDown" data-timeout="400" style="text-align: center;margin:3rem 0;">
         Latest Uploads
       </h1>
       <div class="grid">
