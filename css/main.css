@@ -384,6 +384,7 @@ img.slide::before {
   .my-nav .container {
     flex-wrap: wrap;
   }
+
   .my-nav.transparent .my-menu {
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 0.5rem;
@@ -412,13 +413,18 @@ img.slide::before {
   .my-menu .list-my-menu {
     margin: 0.5rem 0 !important;
   }
+  .list-my-menu.has-dropdown:hover .my-menu-dropdown {
+    max-height: 100vh;
+  }
   .my-menu-dropdown {
     position: relative;
     /* transform: translateX(0) !important; */
     box-shadow: none;
     opacity: 1;
-
-    padding-left: 0.5rem !important;
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s ease;
+    padding: 0 !important;
   }
   .my-menu-dropdown a {
     font-size: 15px !important;

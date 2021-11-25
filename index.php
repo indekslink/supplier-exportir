@@ -191,26 +191,26 @@
     </div>
     <div class="owl-carousel">
       <figure>
-        <img src="./img/kelapa/logo-hero.jpg" class="preview" style="width: 100%; min-height: 60vh" />
+        <img src="./img/kelapa/logo-hero.jpg" class="preview" style="width: 100%; min-height: 50vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-1.jpg" class="preview" style="width: 100%; min-height: 60vh" />
+        <img src="./img/kelapa/carousel-1.jpg" class="preview" style="width: 100%; min-height: 50vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-2.jpg" class="preview" style="width: 100%; min-height: 60vh" />
+        <img src="./img/kelapa/carousel-2.jpg" class="preview" style="width: 100%; min-height: 50vh" />
       </figure>
       <figure>
-        <img src="./img/kelapa/carousel-3.jpg" class="preview" style="width: 100%; min-height: 60vh" />
+        <img src="./img/kelapa/carousel-3.jpg" class="preview" style="width: 100%; min-height: 50vh" />
       </figure>
     </div>
   </div>
   <!-- <img src="img/index_gallery/frame.png" style="position:absolute;z-index:4;width:100%;top:0;"> -->
 
-  <div id="wrapper" style="margin-top: 5%">
+  <div id="wrapper">
     <div id="konten">
-      <h1 class="anim" data-animation="fadeInDown" data-timeout="400" style="text-align: center;margin:3rem 0;">
+      <h2 class="anim" data-animation="fadeInDown" data-timeout="400" style="text-align: center;margin:2rem 0;">
         Latest Uploads
-      </h1>
+      </h2>
       <div class="grid">
         <a href="./img/kelapa/betel-nut(2).jpeg" class="progressive lightbox replace anim" data-animation="fadeInUp">
           <img src="./img/kelapa/betel-nut(2).jpeg" alt="image" class="preview" />
@@ -269,6 +269,7 @@
         loop: true,
 
         nav: false,
+        animateOut: 'fadeOut',
         autoplay: true,
         autoplayTimeout: 6000,
         responsive: {
